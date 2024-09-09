@@ -1,12 +1,26 @@
 ---
 
 fileClass: infra_site
-site_: {{ name }}
+site_name: {{ name }}
+site_region: "[[{{ region.name }}]]"
 site_netbox_url: {{ url }}
+site_time_zone: {{ time_zone }}
+site_address: {{ physical_address }}
+site_latitude: {{ latitude }}
+site_longitude: {{ longitude }}
 
 ---
 
 # {{ name }}
+
+## Related Devices
+
+```dataview
+
+
+
+
+```
 
 ---
 

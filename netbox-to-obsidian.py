@@ -47,7 +47,7 @@ for item in config['config']:
                 rendered_template = template.render(data_item)
                 
                 # Define the filename.
-                if netbox_endpoint == "/api/dcim/device-types":
+                if "device-types" in netbox_endpoint:
                     filename = f"{obsidian_folder}/{data_item['model']}.md"
                 else:
                     filename = f"{obsidian_folder}/{data_item['name']}.md"
