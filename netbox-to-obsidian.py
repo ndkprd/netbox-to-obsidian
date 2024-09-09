@@ -47,7 +47,11 @@ for item in config['config']:
                 rendered_template = template.render(data_item)
                 
                 # Define the filename.
-                filename = f"{obsidian_folder}/{data_item['name']}.md"
+                if netbox_endpoint == "/api/dcim/device-types":
+                    filename = f"{obsidian_folder}/{data_item['model']}.md"
+                else:
+                    filename = f"{obsidian_folder}/{data_item['name']}.md"
+
                 # Save the rendered template into a file
                 with open(filename, 'w') as f:
                     f.write(rendered_template)
