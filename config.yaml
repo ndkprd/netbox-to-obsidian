@@ -4,16 +4,16 @@ config:
 
   - netbox_endpoint: "/api/dcim/devices"
     obsidian_template: "device.md.j2"
-    obsidian_folder: "output/Devices"
+    obsidian_folder: "C:/Users/Administrator/Documents/ASDP/OneDrive - PT Indonesia Ferry (Persero)/Obsidian Vault v2/10-19 Work/10 Technical Data/10.01 Infrastructures/Devices"
 
   - netbox_endpoint: "/api/dcim/manufacturers"
     obsidian_template: "manufacturer.md.j2"
-    obsidian_folder: "output/Manufacturers"
+    obsidian_folder: "C:/Users/Administrator/Documents/ASDP/OneDrive - PT Indonesia Ferry (Persero)/Obsidian Vault v2/10-19 Work/10 Technical Data/10.01 Infrastructures/Manufacturers"
 
   - netbox_endpoint: "/api/dcim/device-roles"
     obsidian_template: "device_role.md.j2"
-    obsidian_folder: "output/Device Roles"
+    obsidian_folder: "C:/Users/Administrator/Documents/ASDP/OneDrive - PT Indonesia Ferry (Persero)/Obsidian Vault v2/10-19 Work/10 Technical Data/10.01 Infrastructures/Device Roles"
 
   - netbox_endpoint: "/api/dcim/sites"
     obsidian_template: "site.md.j2"
-    obsidian_folder: "output/Sites"
+    obsidian_folder: "C:/Users/Administrator/Documents/ASDP/OneDrive - PT Indonesia Ferry (Persero)/Obsidian Vault v2/10-19 Work/10 Technical Data/10.01 Infrastructures/Sites"

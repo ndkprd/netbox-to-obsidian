@@ -4,11 +4,11 @@ fileClass: infra_device
 device_hostname: {{ name }}
 device_serial: {{ serial }}
 device_asset_tag: {{ asset_tag | default('') }}
-device_role: [[{{ role.name }}]]
-device_manufacturer: [[{{ device_type.manufacturer.name }}]]
-device_type: [[{{ device_type.model }}]]
+device_role: "[[{{ role.name }}]]"
+device_manufacturer: "[[{{ device_type.manufacturer.name }}]]"
+device_type: "[[{{ device_type.model }}]]"
 device_platform: {{ platform.name }}
-device_site: [[{{ site.name }}]]
+device_site: "[[{{ site.name }}]]"
 device_ip_address: {{ primary_ip.address }}
 device_netbox_url: {{ url }}
 
@@ -18,16 +18,16 @@ device_netbox_url: {{ url }}
 
 ## Description
 
-Hostname:
-Serial:
-Asset Tag:
-Device Role:
-Manufacturer:
-Device Type:
-Platform:
-Site:
-IP Address:
-Netbox URL:
+Hostname: `=this.file.device_hostname`
+Serial: `=this.file.device_serial`
+Asset Tag: `=this.file.device_asset_tag`
+Device Role: `=this.file.device_role`
+Manufacturer: `=this.file.device_manufacturer`
+Device Type: `=this.file.device_type`
+Platform: `=this.file.device_platform`
+Site: `=this.file.device_site`
+IP Address: `=this.file.device_ip_address`
+Netbox URL: `=this.file.device_netbox_url`
 
 ## Related Tasks
 

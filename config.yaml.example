@@ -1,0 +1,19 @@
+---
+
+config:
+
+  - netbox_endpoint: "/api/dcim/devices"
+    obsidian_template: "device.md.j2"
+    obsidian_folder: "/home/user/obsidian-vault/my-labs/Devices"
+
+  - netbox_endpoint: "/api/dcim/manufacturers"
+    obsidian_template: "manufacturer.md.j2"
+    obsidian_folder: "/home/user/obsidian-vault/my-labs/Manufacturers"
+
+  - netbox_endpoint: "/api/dcim/device-roles"
+    obsidian_template: "device_role.md.j2"
+    obsidian_folder: "/home/user/obsidian-vault/my-labs/Device Roles"
+
+  - netbox_endpoint: "/api/dcim/sites"
+    obsidian_template: "site.md.j2"
+    obsidian_folder: "/home/user/obsidian-vault/my-labs/Sites"
