@@ -1,0 +1,45 @@
+---
+
+fileClass: infrastructure
+hostname: {{ name }}
+serial: {{ serial }}
+asset_tag: {{ asset_tag | default('') }}
+device_role: [[{{ role.name }}]]
+manufacturer: [[{{ device_type.manufacturer.name }}]]
+device_type: [[{{ device_type.model }}]]
+platform: {{ platform.name }}
+site: [[{{ site.name }}]]
+ip_address: {{ primary_ip.address }}
+netbox_url: {{ url }}
+
+---
+
+# {{ name }}
+
+## Description
+
+Hostname: {{ name }}
+Serial: {{ serial | default('') }}
+Asset Tag: {{ asset_tag | default('') }}
+Device Role: [[{{ role.name }}]]
+Manufacturer: [[{{ device_type.manufacturer.name }}]]
+Device Type: [[{{ device_type.name }}]]
+Platform: [[{{ platform.name }}]]
+Site: [[{{ site.name }}]]
+IP Address: {{ primary_ip.address }}
+Netbox URL: {{ url }}
+
+## Related Tasks
+
+```dataview
+
+LIST
+FROM "00-00 Daily Notes" and [[]]
+WHERE fileClass = "task"
+
+```
+
+---
+
+**Created at:** `this.file.ctime`
+**Last modifed at:** `this.file.mtime`
