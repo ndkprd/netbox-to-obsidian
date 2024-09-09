@@ -1,16 +1,16 @@
 ---
 
-fileClass: infrastructure
-hostname: {{ name }}
-serial: {{ serial }}
-asset_tag: {{ asset_tag | default('') }}
+fileClass: infra_device
+device_hostname: {{ name }}
+device_serial: {{ serial }}
+device_asset_tag: {{ asset_tag | default('') }}
 device_role: [[{{ role.name }}]]
-manufacturer: [[{{ device_type.manufacturer.name }}]]
+device_manufacturer: [[{{ device_type.manufacturer.name }}]]
 device_type: [[{{ device_type.model }}]]
-platform: {{ platform.name }}
-site: [[{{ site.name }}]]
-ip_address: {{ primary_ip.address }}
-netbox_url: {{ url }}
+device_platform: {{ platform.name }}
+device_site: [[{{ site.name }}]]
+device_ip_address: {{ primary_ip.address }}
+device_netbox_url: {{ url }}
 
 ---
 
@@ -18,16 +18,16 @@ netbox_url: {{ url }}
 
 ## Description
 
-Hostname: {{ name }}
-Serial: {{ serial | default('') }}
-Asset Tag: {{ asset_tag | default('') }}
-Device Role: [[{{ role.name }}]]
-Manufacturer: [[{{ device_type.manufacturer.name }}]]
-Device Type: [[{{ device_type.name }}]]
-Platform: [[{{ platform.name }}]]
-Site: [[{{ site.name }}]]
-IP Address: {{ primary_ip.address }}
-Netbox URL: {{ url }}
+Hostname:
+Serial:
+Asset Tag:
+Device Role:
+Manufacturer:
+Device Type:
+Platform:
+Site:
+IP Address:
+Netbox URL:
 
 ## Related Tasks
 
